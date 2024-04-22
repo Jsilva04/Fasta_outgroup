@@ -15,7 +15,7 @@ def fasta_outgroup(fastafile):
     with open(fastafile, 'w') as file:
         for line in lines:
             file.write(line + "\n")
-            print("File written with success!")
+        print("File written with success!")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
