@@ -1,0 +1,26 @@
+name: Fasta species name to outgroup Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  change_sn_to_og:
+    name: Change species name to outgroup
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Script Teste
+      run: python fasta_sn_to_og.py data/example_aligned.fasta
