@@ -22,5 +22,5 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Script Teste
-      run: python fasta_sn_to_og.py data/example_aligned.fasta
+    - name: Script Tester
+      run: python fasta_sn_to_og.py data/example.fasta
