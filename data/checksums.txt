@@ -1,2 +1,2 @@
-1aa82f3939af37a136f5eccece66ca795bdb58c13b18afff68922dd5a9fe97fb  example.fasta
+103a31d75f035b2dd16d3def2b2b8637ac522fb155afb3e48b112ff48f7dc9e8  example.fasta
 103a31d75f035b2dd16d3def2b2b8637ac522fb155afb3e48b112ff48f7dc9e8  example_writen.fasta
