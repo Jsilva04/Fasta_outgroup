@@ -26,7 +26,7 @@ jobs:
       run: python fasta_sn_to_og.py data/example.fasta > data/example_written.fasta
 
     - name: Redirect to checksums
-      run: sha256sum data/* > data/checksums.txt
+      run: sha256sum data/*.fasta > data/checksums.txt
 
     - name: Compare result
       run: sha256sum -c data/checksums.txt
