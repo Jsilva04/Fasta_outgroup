@@ -7,15 +7,12 @@ def fasta_outgroup(fastafile):
             line = line.rstrip("\n")
             if line.startswith(">"):
                 words = line.split()
-                species_name = line[1:]
-                outgroup = words[-1]
-                line = line.replace(species_name, outgroup)
+                species_name = "_".join(words[1:3])
+                line = ">" + species_name
             lines.append(line)
 
-    with open(fastafile, 'w') as file:
-        for line in lines:
-            file.write(line + "\n")
-        print("File written with success!")
+    for line in lines:
+        print(line)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
