@@ -11,6 +11,7 @@ def fasta_outgroup(fastafile):
                 line = ">" + species_name
             lines.append(line)
 
+
     for line in lines:
         print(line)
 

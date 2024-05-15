@@ -22,5 +22,16 @@ jobs:
       with:
         python-version: '3.x'
 
+<<<<<<< HEAD
     - name: Script Teste
       run: python fasta_sn_to_og.py data/example.fasta
+=======
+    - name: Script Tester
+      run: python fasta_sn_to_og.py data/example.fasta > data/example_written.fasta
+
+    - name: Redirect to checksums
+      run: sha256sum data/*.fasta > data/checksums.txt
+
+    - name: Compare result
+      run: sha256sum -c data/checksums.txt
+>>>>>>> f1a52cd0575ad43e86a3561d47e957d9c55398f7
